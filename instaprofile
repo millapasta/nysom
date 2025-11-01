@@ -1,1 +1,193 @@
-.insta {margin: 0 auto 30px;border-radius: 10px;width: 500px;background-color: var(--l1);display: grid;grid-template-columns: 150px 1fr;grid-template-rows: auto auto;grid-template-areas: "i b" "p p";gap: 15px;padding: 15px;box-sizing: border-box;position: relative;} .instai {grid-area: i;display: flex;align-items: flex-start;justify-content: center;} .instai img {border-radius: 100px;width: 125px;height: 125px;object-fit: cover;} .instab {grid-area: b;display: flex;flex-direction: column;justify-content: flex-start;} .instabh {display: flex;flex-direction: column;} .instabh b {display: flex;align-items: center;gap: 6px;font: 25px 'DM Serif Display';margin: 0 0 5px;background: linear-gradient(to right, var(--h1), var(--h2));-webkit-background-clip: text;color: transparent;width: fit-content;} .verif-icon {width: 16px;height: 16px;margin-left: 4px;object-fit: cover;} .insta-btns {display: flex;gap: 8px;margin-top: 6px;align-items: center;} .instabh c {background: var(--greyer);border-radius: 4px;display: inline-flex;align-items: center;justify-content: center;text-transform: uppercase;padding: 6px 10px;margin: 0;font-size: 11px;line-height: 1;} .instabh c:first-of-type {background: linear-gradient(to right, var(--h1), var(--h2));color: var(--light);} .instabh c:first-of-type span {margin-left: 6px;font-size: 9px;} .instabh c:last-of-type {padding: 6px 10px;display: inline-flex;align-items: center;justify-content: center;height: auto;} .instabh c:last-of-type span {font-size: 12px;transform: rotate(90deg);display: block;line-height: 1;} .instabs {margin: 10px 0 0;font: 12px 'Courier Prime';text-transform: uppercase;display: flex;gap: 12px;align-items: center;} .instabs x { display: inline-flex; align-items: baseline; gap:6px; color:var(--text); } .instabs y { font: 900 12px var(--type); } .instabio {margin: 10px 0 0;font: 12px var(--sans);color: var(--d3);} .instabio b { color: var(--text); } .instabio b1 {color: var(--text);font-family: 'Poppins', sans-serif;font-size: 12px;font-weight: 600;} .instapin {grid-area: p;display: flex;flex-wrap: wrap;gap: 15px;justify-content: space-between;padding: 10px 10px 20px;box-sizing: border-box;} .instapin a {width: calc((100% - 2 * 15px) / 3);max-width: 160px;flex: 0 0 auto;position: relative;display: inline-block;text-decoration: none;} .instapin a img {width: 100%;height: 160px;object-fit: cover;border-radius: 5px;display: block;} .instapin a:after {content: "\f24d";font-family: "Font Awesome 5 Free";font-weight: 900;position: absolute;top: 10px;right: 10px;color: var(--light);font-size: 14px;} @media (max-width: 560px) {.insta { width: 100%; padding:10px; } .instapin a { width: calc((100% - 2 * 10px) / 3); }}
+.insta {
+  margin: 0 auto 30px;
+  border-radius: 10px;
+  width: 500px;
+  background-color: var(--l1);
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+    "i b"
+    "p p";
+  gap: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.instai {
+  grid-area: i;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.instai img {
+  border-radius: 100px;
+  width: 125px;
+  height: 125px;
+  object-fit: cover;
+}
+
+.instab {
+  grid-area: b;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.instabh {
+  display: flex;
+  flex-direction: column;
+}
+
+.instabh b {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font: 25px 'DM Serif Display';
+  margin: 0 0 5px;
+  background: linear-gradient(to right, var(--h1), var(--h2));
+  -webkit-background-clip: text;
+  color: transparent;
+  width: fit-content;
+}
+
+.verif-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+  object-fit: cover;
+}
+
+.insta-btns {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+  align-items: center;
+}
+
+.instabh c {
+  background: var(--greyer);
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  margin: 0;
+  font-size: 11px;
+  line-height: 1;
+}
+
+.instabh c:first-of-type {
+  background: linear-gradient(to right, var(--h1), var(--h2));
+  color: var(--light);
+}
+
+.instabh c:first-of-type span {
+  margin-left: 6px;
+  font-size: 9px;
+}
+
+.instabh c:last-of-type {
+  padding: 6px 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.instabh c:last-of-type span {
+  font-size: 12px;
+  transform: rotate(90deg);
+  display: block;
+  line-height: 1;
+}
+
+.instabs {
+  margin: 10px 0 0;
+  font: 12px 'Courier Prime';
+  text-transform: uppercase;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.instabs x {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  color: var(--text);
+}
+
+.instabs y {
+  font: 900 12px var(--type);
+}
+
+.instabio {
+  margin: 10px 0 0;
+  font: 12px var(--sans);
+  color: var(--d3);
+}
+
+.instabio b {
+  color: var(--text);
+}
+
+.instabio b1 {
+  color: var(--text);
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.instapin {
+  grid-area: p;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+  padding: 10px 10px 20px;
+  box-sizing: border-box;
+}
+
+.instapin a {
+  width: calc((100% - 2 * 15px) / 3);
+  max-width: 160px;
+  flex: 0 0 auto;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.instapin a img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+}
+
+.instapin a:after {
+  content: "\f24d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--light);
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 560px) {
+  .insta {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .instapin a {
+    width: calc((100% - 2 * 10px) / 3);
+  }
+}
