@@ -13,13 +13,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     nextButton.addEventListener('click', (event) => {
-      event.preventDefault(); // <-- empêche le rechargement
+      event.preventDefault();
       index = (index + 1) % images.length;
       updateCarousel();
     });
 
     prevButton.addEventListener('click', (event) => {
-      event.preventDefault(); // <-- empêche le rechargement
+      event.preventDefault();
       index = (index - 1 + images.length) % images.length;
       updateCarousel();
     });
