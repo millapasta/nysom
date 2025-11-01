@@ -12,12 +12,14 @@ document.addEventListener("DOMContentLoaded", function() {
       track.style.transform = `translateX(-${index * 100}%)`;
     }
 
-    nextButton.addEventListener('click', () => {
+    nextButton.addEventListener('click', (event) => {
+      event.preventDefault(); // <-- empêche le rechargement
       index = (index + 1) % images.length;
       updateCarousel();
     });
 
-    prevButton.addEventListener('click', () => {
+    prevButton.addEventListener('click', (event) => {
+      event.preventDefault(); // <-- empêche le rechargement
       index = (index - 1 + images.length) % images.length;
       updateCarousel();
     });
