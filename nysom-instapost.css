@@ -9,7 +9,7 @@ thanks ♡
 -->
 
 .insta-post {
-  width: 500px;
+  width: 500px !important;
   margin: 25px auto;
   background: var(--l1, #fff);
   border-radius: 10px;
