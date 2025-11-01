@@ -9,15 +9,13 @@ thanks ♡
 -->
 
 .insta-post {
-  width: 100%;
-  max-width: 500px;
+  width: 500px;
   margin: 25px auto;
   background: var(--l1, #fff);
   border-radius: 10px;
   overflow: hidden;
   font-family: 'Poppins', sans-serif;
   color: var(--text, #222);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 /* HEADER */
