@@ -1,6 +1,7 @@
 .histig {
   position: relative;
   width: 280px;
+  height: 500px;
   border-radius: 10px;
   overflow: hidden;
   margin: 0 auto 20px;
