@@ -106,18 +106,21 @@ thanks ♡
 .carousel {
   position: relative;
   overflow: hidden;
-  width: 500px; /* adapte selon tes images */
-  height: 500px;
+  width: 100%; /* prend toute la largeur du parent */
+  max-width: 450px; /* limite la largeur pour Forumactif */
+  margin: 10px 0;
 }
 
 .carousel-track {
   display: flex;
-  transition: transform 0.5s ease;
+  transition: transform 0.4s ease;
+  width: 100%;
 }
 
 .carousel-image {
-  width: 100%;
+  width: 100%; /* prend toute la largeur du carousel */
   flex-shrink: 0;
+  object-fit: cover; /* les images gardent leur ratio et remplissent le cadre */
 }
 
 .carousel-btn {
@@ -127,13 +130,14 @@ thanks ♡
   background: rgba(0,0,0,0.4);
   color: #fff;
   border: none;
-  padding: 10px;
+  padding: 5px 10px;
   cursor: pointer;
   z-index: 10;
+  font-size: 18px;
 }
 
-.carousel-btn.prev { left: 10px; }
-.carousel-btn.next { right: 10px; }
+.carousel-btn.prev { left: 5px; }
+.carousel-btn.next { right: 5px; }
 
 /* POST BODY */
 
