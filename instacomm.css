@@ -1,0 +1,82 @@
+.instapost {
+    width: 500px;
+    margin: 20px auto;
+    background-color: var(--l1) !important;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text);
+    overflow: hidden;
+    display: flex
+;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 15px;
+    gap: 10px;
+}
+
+.id-top {
+    display: flex
+;
+    align-items: center;
+    gap: 5px;
+}
+
+.id-top b {
+    font-family: 'DM Serif Display', serif;
+    font-size: 16px;
+    background: linear-gradient(to right, var(--h1, #ff7bc8), var(--h2, #c07cff));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.verif-icon {
+    width: 14px;
+    height: 14px;
+    object-fit: cover;
+}
+
+.date {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--d3, #888);
+    letter-spacing: 0.5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.insta-id {
+  display: flex;
+  align-items: center; /* aligne verticalement l’image et les infos */
+  gap: 10px; /* petit espace entre la photo et le texte */
+}
+
+.insta-id-pic {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0; /* empêche l’image de se déformer */
+  margin: 0; /* supprime les décalages éventuels */
+}
+
+.id-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centre verticalement le texte */
+}
+
+.insta-comment-display {
+  margin-top: 10px;
+  background: var(--l0, #f9f9f9);
+  border: 5px solid var(--l1, #fff);
+  border-radius: 10px;
+  padding: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  color: var(--text, #333);
+  line-height: 1.5;
+  text-align: justify;
+  white-space: pre-line;
+}
