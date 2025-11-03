@@ -7,8 +7,7 @@
     font-family: 'Poppins', sans-serif;
     color: var(--text);
     overflow: hidden;
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
@@ -16,9 +15,34 @@
     gap: 10px;
 }
 
+/* bloc de l’image et infos */
+.insta-id {
+    display: flex;
+    align-items: center; /* centre verticalement image + texte */
+    gap: 10px;
+}
+
+/* image profil */
+.insta-id-pic {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin: 0;
+}
+
+/* infos utilisateur */
+.id-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centre verticalement le texte par rapport à l’image */
+    flex: 1; /* prend tout l’espace restant */
+}
+
+/* ligne nom + vérifié */
 .id-top {
-    display: flex
-;
+    display: flex;
     align-items: center;
     gap: 5px;
 }
@@ -37,6 +61,7 @@
     object-fit: cover;
 }
 
+/* date ou info secondaire */
 .date {
     font-size: 11px;
     text-transform: uppercase;
@@ -46,37 +71,19 @@
     cursor: pointer;
 }
 
-.insta-id {
-  display: flex;
-  align-items: center; /* aligne verticalement l’image et les infos */
-  gap: 10px; /* petit espace entre la photo et le texte */
-}
-
-.insta-id-pic {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  object-fit: cover;
-  flex-shrink: 0; /* empêche l’image de se déformer */
-  margin: 0; /* supprime les décalages éventuels */
-}
-
-.id-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* centre verticalement le texte */
-}
-
+/* bloc “commentaire” en dessous prenant toute la largeur */
 .insta-comment-display {
-  margin-top: 10px;
-  background: var(--l0, #f9f9f9);
-  border: 5px solid var(--l1, #fff);
-  border-radius: 10px;
-  padding: 12px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px;
-  color: var(--text, #333);
-  line-height: 1.5;
-  text-align: justify;
-  white-space: pre-line;
+    margin-top: 10px;
+    background: var(--l0, #f9f9f9);
+    border: 5px solid var(--l1, #fff);
+    border-radius: 10px;
+    padding: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: var(--text, #333);
+    line-height: 1.5;
+    text-align: justify;
+    white-space: pre-line;
+    width: 100%; /* prend toute la largeur de .instapost */
+    box-sizing: border-box; /* inclut padding dans la largeur */
 }
