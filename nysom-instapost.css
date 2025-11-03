@@ -166,6 +166,7 @@ thanks ♡
 
 .post-pic {
   width: 100%;
+  border-radius: 5px;
   height: auto;
   display: block;
   object-fit: cover;
