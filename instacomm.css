@@ -15,11 +15,12 @@
     gap: 10px;
 }
 
-/* bloc de l’image et infos */
+/* Ligne unique : image + infos + date */
 .insta-id {
     display: flex;
-    align-items: center; /* centre verticalement image + texte */
+    align-items: center; /* centre verticalement tout le contenu */
     gap: 10px;
+    flex-wrap: nowrap; /* empêche le retour à la ligne */
 }
 
 /* image profil */
@@ -29,18 +30,19 @@
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
-    margin: 0;
 }
 
-/* infos utilisateur */
+/* infos utilisateur (nom + vérifié + date) */
 .id-info {
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* centre verticalement le texte par rapport à l’image */
-    flex: 1; /* prend tout l’espace restant */
+    flex-direction: row; /* ligne horizontale pour nom + date */
+    align-items: center; /* centre verticalement */
+    justify-content: space-between; /* sépare nom et date si nécessaire */
+    flex: 1; /* prend tout l’espace restant après l’image */
+    gap: 10px;
 }
 
-/* ligne nom + vérifié */
+/* Ligne nom + vérifié */
 .id-top {
     display: flex;
     align-items: center;
@@ -61,17 +63,16 @@
     object-fit: cover;
 }
 
-/* date ou info secondaire */
+/* Date / info secondaire */
 .date {
     font-size: 11px;
     text-transform: uppercase;
     color: var(--d3, #888);
     letter-spacing: 0.5px;
-    position: relative;
     cursor: pointer;
 }
 
-/* bloc “commentaire” en dessous prenant toute la largeur */
+/* Bulle de commentaire sous la ligne principale */
 .insta-comment-display {
     margin-top: 10px;
     background: var(--l0, #f9f9f9);
@@ -84,6 +85,6 @@
     line-height: 1.5;
     text-align: justify;
     white-space: pre-line;
-    width: 100%; /* prend toute la largeur de .instapost */
-    box-sizing: border-box; /* inclut padding dans la largeur */
+    width: 100%; /* prend toute la largeur */
+    box-sizing: border-box;
 }
