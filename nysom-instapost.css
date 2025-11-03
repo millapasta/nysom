@@ -8,6 +8,24 @@ merci de ne pas t'approprier mes codes ! // Do not :
 thanks ♡
 -->
 
+.insta {
+    margin: 0 auto 30px;
+    border-radius: 10px;
+    width: 500px;
+    background-color: var(--l1);
+    display: grid
+;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "i b"
+        "p p";
+    gap: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
 .instapost {
   width: 500px;
   margin: 20px auto;
