@@ -191,6 +191,7 @@ thanks ♡
 
 /* Bulle de commentaire sous la ligne principale */
 .insta-comment-display {
+    margin-top: -5px;
     background: var(--l0, #f9f9f9);
     border: 5px solid var(--l1, #fff);
     border-radius: 10px;
