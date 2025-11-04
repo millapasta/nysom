@@ -5,13 +5,6 @@
   --gradient-dark: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .raya-profile {
   width: 100%;
   max-width: 500px;
