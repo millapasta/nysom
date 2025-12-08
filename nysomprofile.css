@@ -1,0 +1,185 @@
+.instanysom {
+  margin: 20px auto 30px;
+  border-radius: 10px;
+  width: 450px; /* nouveau width */
+  background-color: var(--l1);
+  display: grid;
+  grid-template-columns: 135px 1fr; /* 150px → proportionnel à 450/500 */
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+    "i b"
+    "p p";
+  gap: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* --- IMAGE --- */
+.instai {
+  grid-area: i;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.instai img {
+  border-radius: 100px;
+  width: 110px; /* 125px → proportionné */
+  height: 110px;
+  object-fit: cover;
+}
+
+/* --- BLOC DROITE --- */
+.instab {
+  grid-area: b;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.instabh {
+  display: flex;
+  flex-direction: column;
+}
+
+.instabh b {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font: 23px 'DM Serif Display'; /* 25 → ajusté */
+  margin: 0 0 5px;
+  background: linear-gradient(to right, var(--h1), var(--h2));
+  -webkit-background-clip: text;
+  color: transparent;
+  width: fit-content;
+}
+
+.verif-icon {
+  width: 14px; /* 16 → scaled */
+  height: 14px;
+  margin-left: 4px;
+  object-fit: cover;
+}
+
+.insta-btns {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+  align-items: center;
+}
+
+.instabh c {
+  background: var(--greyer);
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 5px 9px; /* légèrement réduit */
+  margin: 0;
+  font-size: 10px;
+  line-height: 1;
+}
+
+.instabh c:first-of-type {
+  background: linear-gradient(to right, var(--h1), var(--h2));
+  color: var(--light);
+}
+
+.instabh c:first-of-type span {
+  margin-left: 5px;
+  font-size: 8px;
+}
+
+.instabh c:last-of-type span {
+  font-size: 11px;
+  transform: rotate(90deg);
+  display: block;
+  line-height: 1;
+}
+
+/* --- STATS --- */
+.instabs {
+  margin: 10px 0 0;
+  font: 11px 'Courier Prime';
+  text-transform: uppercase;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.instabs x {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  color: var(--text);
+}
+
+.instabs y {
+  font: 900 12px var(--type);
+}
+
+/* --- BIO --- */
+.instabio {
+  margin: 10px 0 0;
+  font: .6rem var(--sans);
+  color: var(--d3);
+}
+
+.instabio b,
+.instabio b1 {
+  color: var(--text);
+  font-size: .6rem;
+}
+
+/* --- PIN BOARD --- */
+.instapin {
+  grid-area: p;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px; /* 15 → réduit pour compenser */
+  justify-content: space-between;
+  padding: 10px 10px 20px;
+  box-sizing: border-box;
+}
+
+.instapin a {
+  width: calc((100% - 2 * 12px) / 3);
+  max-width: 140px; /* 160 → proportion */
+  flex: 0 0 auto;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.instapin a img {
+  width: 100%;
+  height: 140px; /* 160 → scaled */
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+}
+
+.instapin a:after {
+  content: "\f24d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 8px;   /* 10 → proportion */
+  right: 8px;
+  color: var(--light);
+  font-size: 12px; /* 14 → scaled */
+}
+
+/* Responsive */
+@media (max-width: 560px) {
+  .instanysom {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .instapin a {
+    width: calc((100% - 2 * 10px) / 3);
+  }
+}
