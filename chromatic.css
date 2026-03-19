@@ -4660,13 +4660,17 @@ SOBccannee:after{display: block;width: 1%;height: 100%;background-color:var(--co
   display:flex;
   flex-wrap:wrap;
 }
+
 .SOB_orgtopg{
-margin-top:5px;
-display: grid;
-grid-gap: 5px;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-rows: 1fr auto;
-width: 100%;
+  margin-top:5px;
+  display:grid;
+  gap:5px;
+  grid-template-columns:repeat(4, 1fr);
+  grid-template-rows:1fr auto;
+  width:100%;
+  flex:0 0 100%;
+  min-width:0;
+  box-sizing:border-box;
 }
 .SOB_orgst{
   font-family: var(--font3);
