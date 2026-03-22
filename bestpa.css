@@ -1,7 +1,7 @@
 .pa-wrap *{box-sizing:border-box;}
 
 .pa-wrap{
-  width:100%;
+  width: 1020px;
   margin:0 auto;
   color:var(--text2);
   font-family:Arial, sans-serif;
