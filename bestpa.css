@@ -48,10 +48,10 @@
 }
 
 .pa-panel{
-  background: rgba(255,255,255,.16);
+  background: var(--bg3);
   border-radius:4px;
   padding:10px;
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.08);
+
 }
 
 .pa-title{
